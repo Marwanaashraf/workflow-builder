@@ -120,6 +120,7 @@ export default function DetailsPanel() {
                 name="name"
                 formik={formik}
                 placeholder="Task 1"
+                required={true}
               />
               <div>
                 <label htmlFor="type">Node Type</label>

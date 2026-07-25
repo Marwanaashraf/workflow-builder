@@ -1,5 +1,4 @@
 
-
 export const NodeType = {
   START: "start",
   TASK: "task",
