@@ -23,6 +23,7 @@ export default function DetailsPanel() {
     setFormType,
   } = useContext(FlowContext)!;
   const isAddMode = formType === FormType.Add;
+
   const closePanel = () => {
     setFormType(null);
     setSelectedNode(null);
@@ -64,7 +65,6 @@ export default function DetailsPanel() {
 
   const deleteSelectedNode = () => {
     if (!selectedNode) return;
-
     deleteNode(selectedNode.id);
     closePanel();
   };
@@ -104,7 +104,7 @@ export default function DetailsPanel() {
           className="
             absolute top-0 bottom-0
             right-0
-            left-[20%] sm:left-[30%] md:left-[40%]
+            left-[15%] sm:left-[30%] md:left-[40%]
             lg:left-[50%] xl:left-[60%]
             bg-zinc-900 p-5
           "
