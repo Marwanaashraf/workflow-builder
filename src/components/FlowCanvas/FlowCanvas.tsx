@@ -1,6 +1,6 @@
 import { addEdge, Background, ReactFlow, type Node } from "@xyflow/react";
 import { FlowContext } from "../../context/FlowContext";
-import { useContext, useEffect, useState } from "react";
+import { useContext,  useState } from "react";
 import StartNode from "../../nodes/StartNode";
 import TaskNode from "../../nodes/TaskNode";
 import EndNode from "../../nodes/EndNode";
