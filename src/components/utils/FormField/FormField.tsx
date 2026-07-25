@@ -5,7 +5,6 @@ interface FormFieldProps {
   textarea?: boolean;
   formik: any;
   placeholder?: string;
-  value?: string | null;
   readOnly?: boolean;
   required?: boolean;
 }
@@ -17,7 +16,6 @@ export default function FormField({
   textarea,
   formik,
   placeholder,
-  value,
   readOnly = false,
   required,
 }: FormFieldProps) {
@@ -36,7 +34,6 @@ export default function FormField({
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values[name]}
-            aria-describedby={`${name}-error`}
             className={"w-full h-24 py-3 form-input"}
           />
         ) : (
@@ -49,7 +46,6 @@ export default function FormField({
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values[name]}
-            aria-describedby={`${name}-error`}
             readOnly={readOnly}
             required={required}
             className={"w-full h-10 pr-10 form-input"}
