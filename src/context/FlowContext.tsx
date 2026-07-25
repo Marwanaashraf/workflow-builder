@@ -27,7 +27,6 @@ export const FlowProvider = ({ children }: Props) => {
 
   const addNode = (node: INode) => {
     setNodes((prevNodes) => [...prevNodes, node]);
-    console.log(nodes);
   };
 
   const deleteNode = (id: string) => {
