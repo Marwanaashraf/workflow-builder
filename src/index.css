@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  @apply bg-zinc-950 text-white;
+}
+.container {
+  @apply w-[90%] mx-auto;
+}
+.form-input {
+  @apply bg-zinc-800 px-3 border border-zinc-700 rounded-xl   text-white focus:outline-none focus:border-primary placeholder:text-zinc-400;
+}
+.btn {
+  @apply text-white font-semibold py-2 px-3 rounded-lg flex justify-center items-center gap-2 hover:opacity-90 transition-opacity duration-300;
+}
+.node {
+  @apply p-3 rounded-xl text-white;
+}
